@@ -1,0 +1,33 @@
+.section-hero {
+  max-width: 100% !important;
+  color: $white;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+  }
+}
+
+.section-hero:not(.banner-wrapper) {
+  padding: 20px 0;
+}
+
+.section-hero.banner-wrapper {
+  padding: 0;
+  position: relative;
+}
+
+.section-hero * {
+    text-align: center;
+    z-index: 3;
+}

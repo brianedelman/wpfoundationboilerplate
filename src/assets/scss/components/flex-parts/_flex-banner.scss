@@ -1,0 +1,36 @@
+.banner-wrapper {
+  margin-bottom: 60px;
+  .grid-x {
+    width: 100%;
+  }
+}
+
+.banner-wrapper .columns,
+.section-hero .columns {
+  z-index: 2;
+}
+
+.banner-wrapper,
+.banner {
+  padding: 60px 0;
+  position: relative;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner h1,
+.banner-wrapper h1,
+.banner h2,
+.banner-wrapper h2,
+.banner p,
+.banner-wrapper p,
+.banner .small-divider,
+.banner-wrapper .small-divider {
+    color: #fff;
+}

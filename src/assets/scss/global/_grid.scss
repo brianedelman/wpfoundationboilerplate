@@ -1,0 +1,20 @@
+.align-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.grid-center-middle {
+  @extend .grid-x;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-centered {
+  @extend .grid-x;
+  justify-content: center;
+}
+
+.page-wrapper {
+  @extend .grid-container;
+}
