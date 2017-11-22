@@ -83,6 +83,10 @@
         if( get_row_layout() == 'question_answer' )
           get_template_part('flex-parts/question', 'answer');
 
+        // question answer row
+        if( get_row_layout() == 'carousel_primary' )
+          get_template_part('flex-parts/slider');
+
 
     endwhile; endif; // close the WordPress loop ?>
 

@@ -1,1 +1,1 @@
-<div class="small-divider extra blue"></div>
+<div class="small-divider extra colored"></div>

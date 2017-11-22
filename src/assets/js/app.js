@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+import './lib/slick.min.js';
+import { TweenLite } from 'gsap';
 
 window.$ = $;
 
@@ -8,35 +10,16 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-import './lib/demosite';
+import * as parallax from './modules/parallax.js';
+import * as slick from './modules/slick.js';
 
 $(document).foundation();
 
-function setUpParallax() {
-    var parallaxElements = $('.parallax-banner'),
-    parallaxQuantity = parallaxElements.length;
+function init() {
+  parallax.init();
+  slick.init();
+}
 
-    $(window).on('scroll', function () {
-
-      window.requestAnimationFrame(function () {
-
-        for (var i = 0; i < parallaxQuantity; i++) {
-          var currentElement = parallaxElements.eq(i);
-          var scrolled = $(window).scrollTop();
-
-          currentElement.css({
-            'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
-          });
-        }
-      });
-
-    });
-  }
-
-  function init() {
-    setUpParallax();
-  }
-
-  $(document).ready(function() {
-    init();
-  });
+$(document).ready(function() {
+  init();
+});
