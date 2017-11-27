@@ -7,7 +7,7 @@
 
   <?php if (!empty($title) || !empty($bg_image)): ?>
     <div class="banner-wrapper">
-      <div class="parallax-banner" <?php if( !empty($bg_image) ): ?>
+      <div class="parallax-banner <?php if (isset($class_name)): echo $class_name; endif; ?>" <?php if( !empty($bg_image) ): ?>
          style="background-image:url(<?php echo $bg_image['url']; ?>)"
       <?php endif; ?>></div>
       <div class="grid-centered">
